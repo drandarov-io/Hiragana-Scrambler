@@ -11,7 +11,7 @@ public class HiraganaScrambler {
     /**
      * Comment the syllables you don't want included.
      */
-    private static final String[][] hiraData = new String[][]{
+    private static final String[][] romajiData = new String[][]{
             {"a", "i", "u", "e", "o"},
 
             {"ka", "ki", "ku", "ke", "ko"},
@@ -39,19 +39,24 @@ public class HiraganaScrambler {
     };
 
     public static void main(String[] args) {
+        String[][] dataSet = romajiData;
+
         int minSyllables = 2;
         int maxSyllables = 5;
 
         int wordCount = 25;
 
-        ThreadLocalRandom current = ThreadLocalRandom.current();
+
+        ThreadLocalRandom random = ThreadLocalRandom.current();
         int set;
 
+        int syllables = random.nextInt(minSyllables, maxSyllables + 1);
+
         for (int i = 0; i < wordCount; i++) {
-            for (int j = 0; j < current.nextInt(minSyllables, maxSyllables + 1); j++) {
-                System.out.print(hiraData
-                        [set = current.nextInt(0, hiraData.length)]
-                        [current.nextInt(0, hiraData[set].length)]);
+            for (int j = 0; j < syllables; j++) {
+                System.out.print(dataSet
+                        [set = random.nextInt(0, dataSet.length)]
+                        [random.nextInt(0, dataSet[set].length)]);
             }
             System.out.println();
             //System.out.println(); //Uncomment if you want empty lines between words
