@@ -43,16 +43,14 @@ public class HiraganaScrambler {
 
         int minSyllables = 2;
         int maxSyllables = 5;
-
         int wordCount = 25;
-
-
-        ThreadLocalRandom random = ThreadLocalRandom.current();
         int set;
 
-        int syllables = random.nextInt(minSyllables, maxSyllables + 1);
+        ThreadLocalRandom random = ThreadLocalRandom.current();
 
         for (int i = 0; i < wordCount; i++) {
+            int syllables = random.nextInt(minSyllables, maxSyllables + 1);
+
             for (int j = 0; j < syllables; j++) {
                 System.out.print(dataSet
                         [set = random.nextInt(0, dataSet.length)]
