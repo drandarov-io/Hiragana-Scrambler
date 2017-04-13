@@ -11,7 +11,7 @@ public class HiraganaScrambler {
     /**
      * Comment the syllables you don't want included.
      */
-    private static final String[][] romajiData = new String[][]{
+    private static final String[][] romajiData = new String[][] {
             {"a", "i", "u", "e", "o"},
 
             {"ka", "ki", "ku", "ke", "ko"},
@@ -36,10 +36,41 @@ public class HiraganaScrambler {
             {"ra", "ri", "ru", "re", "ro"},
 
             {"wa",                   "wo"},
+
+            {"n"},
+    };
+
+    private static final String[][] hiraganaData = new String[][] {
+            {"あ", "い", "う", "え", "お"},
+
+            {"か", "き", "く", "け", "こ"},
+            {"が", "ぎ", "ぐ", "げ", "ご"},
+
+            {"さ", "し", "す", "せ", "そ"},
+            {"ざ", "じ", "ず", "ぜ", "ぞ"},
+
+            {"た", "ち", "つ", "て", "と"},
+            {"だ", "ぢ", "づ", "で", "ど"},
+
+            {"な", "に", "ぬ", "ね", "の"},
+
+            {"は", "ひ", "ふ", "へ", "ほ"},
+            {"ば", "び", "ぶ", "べ", "ぼ"},
+            {"ぱ", "ぴ", "ぷ", "ぺ", "ぽ"},
+
+            {"ま", "み", "む", "め", "も"},
+
+            {"や",       "ゆ",       "よ"},
+
+            {"ら", "り", "る", "れ", "ろ"},
+
+            {"わ",                   "を"},
+
+            {"ん"},
     };
 
     public static void main(String[] args) {
-        String[][] dataSet = romajiData;
+        String[][] dataSet = hiraganaData;
 
         int minSyllables = 2;
         int maxSyllables = 5;
