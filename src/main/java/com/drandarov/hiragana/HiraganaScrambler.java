@@ -36,6 +36,8 @@ public class HiraganaScrambler {
             {"ra", "ri", "ru", "re", "ro"},
 
             {"wa",                   "wo"},
+
+            {"n"},
     };
 
     private static final String[][] hiraganaData = new String[][] {
