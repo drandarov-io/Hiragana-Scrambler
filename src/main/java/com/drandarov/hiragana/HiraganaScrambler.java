@@ -8,9 +8,7 @@ import java.util.concurrent.ThreadLocalRandom;
  */
 public class HiraganaScrambler {
 
-    /**
-     * Comment the syllables you don't want included.
-     */
+    /** Comment out the syllables you don't want included. */
     private static final String[][] romajiData = new String[][] {
             {"a", "i", "u", "e", "o"},
 
@@ -40,6 +38,7 @@ public class HiraganaScrambler {
             {"n"},
     };
 
+    /** Comment out the syllables you don't want included. */
     private static final String[][] hiraganaData = new String[][] {
             {"あ", "い", "う", "え", "お"},
 
@@ -69,24 +68,27 @@ public class HiraganaScrambler {
             {"ん"},
     };
 
+    /**
+     * Run this method to print randomly generated syllable concatinations to the console.
+     */
     public static void main(String[] args) {
         String[][] dataSet = hiraganaData;
 
-        int minSyllables = 2;
-        int maxSyllables = 5;
+        int minSyllableCount = 2; //e.g. "Ba.ka"
+        int maxSyllableCount = 5; //e.g. "ha.hi.fu.he.ho"
         int wordCount = 25;
         int set;
 
         ThreadLocalRandom random = ThreadLocalRandom.current();
 
         for (int i = 0; i < wordCount; i++) {
-            int syllables = random.nextInt(minSyllables, maxSyllables + 1);
+            int randomSyllableCount = random.nextInt(minSyllableCount, maxSyllableCount + 1);
 
-            for (int j = 0; j < syllables; j++) {
-                System.out.print(dataSet
-                        [set = random.nextInt(0, dataSet.length)]
-                        [random.nextInt(0, dataSet[set].length)]);
+            for (int j = 0; j < randomSyllableCount; j++) {
+                System.out.print(dataSet[set = random.nextInt(0, dataSet.length)]
+                                              [random.nextInt(0, dataSet[set].length)]);
             }
+
             System.out.println();
             //System.out.println(); //Uncomment if you want empty lines between words
         }
