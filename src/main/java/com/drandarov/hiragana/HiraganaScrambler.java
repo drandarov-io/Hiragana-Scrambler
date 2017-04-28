@@ -76,7 +76,7 @@ public class HiraganaScrambler {
 
         int minSyllableCount = 2; //e.g. "Ba.ka"
         int maxSyllableCount = 5; //e.g. "ha.hi.fu.he.ho"
-        int wordCount = 25;
+        int wordCount = 25;       //Amount of generated words
         int set;
 
         ThreadLocalRandom random = ThreadLocalRandom.current();
