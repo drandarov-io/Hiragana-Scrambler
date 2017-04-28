@@ -82,13 +82,10 @@ public class HiraganaScrambler {
         ThreadLocalRandom random = ThreadLocalRandom.current();
 
         for (int i = 0; i < wordCount; i++) {
-            int randomSyllableCount = random.nextInt(minSyllableCount, maxSyllableCount + 1);
-
-            for (int j = 0; j < randomSyllableCount; j++) {
+            for (int j = 0; j < random.nextInt(minSyllableCount, maxSyllableCount + 1); j++) {
                 System.out.print(dataSet[set = random.nextInt(0, dataSet.length)]
                                               [random.nextInt(0, dataSet[set].length)]);
             }
-
             System.out.println();
             //System.out.println(); //Uncomment if you want empty lines between words
         }
