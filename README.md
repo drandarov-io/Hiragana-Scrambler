@@ -2,7 +2,30 @@
 
 A small Hiragana-Scrambler I wrote for practicing.
 
-Sample Output:
+Sample Output with Hiragana-Data:
+
+    ふぴ
+    ずぢぼどみ
+    ゆだぢ
+    ゆざ
+    ぴみんぼ
+    でれ
+    ぺぞを
+    こふ
+    ふて
+    んやあ
+    れむで
+    ずり
+    やゆはぶ
+    がんさ
+    だそえ
+    わあずみ
+    ふれあ
+    うんおなど
+    はんざさし
+    どよ
+
+Sample Output with Romaji-Data:
 
     zogayomuwa
     nosepu
@@ -24,8 +47,3 @@ Sample Output:
     getobuwa
     romikipeba
     suwo
-    ukozudano
-    gezu
-    bukorosu
-    gezuzopopu
-    tege
