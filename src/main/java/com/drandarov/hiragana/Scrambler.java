@@ -12,11 +12,11 @@ import static com.drandarov.hiragana.HiraganaDataSet.*;
 public class Scrambler {
 
     /**
-     * Run this method to print randomly generated syllable concatinations to the console.
+     * Run this method to print randomly generated syllable concatenations to the console.
      * Choose any amount of datasets from {@link HiraganaDataSet} in the first line.
      */
     public static void main(String[] args) {
-        String[][] dataSet = Stream.of(hiraganaData, hiraganaExtraData)
+        String[][] dataSet = Stream.of(temp, hiraganaData, hiraganaExtraData)
                 .flatMap(Stream::of).toArray(String[][]::new);
 
         int minSyllableCount = 2; // e.g. "ba.ka"

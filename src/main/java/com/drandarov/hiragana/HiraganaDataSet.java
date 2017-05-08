@@ -8,6 +8,8 @@ package com.drandarov.hiragana;
  */
 class HiraganaDataSet {
 
+    static final String[][] temp = new String[0][0];
+
      /////////////////
     //    Romaji    //
     /////////////////
