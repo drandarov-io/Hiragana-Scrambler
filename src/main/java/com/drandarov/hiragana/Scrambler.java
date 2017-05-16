@@ -31,7 +31,7 @@ public class Scrambler {
                 System.out.print(dataSet[set = random.nextInt(0, dataSet.length)]
                                               [random.nextInt(0, dataSet[set].length)]);
             }
-            System.out.println(/*\n*/); // Uncomment if you want empty lines between words
+            System.out.println(/*"\n"*/); // Uncomment if you want empty lines between words
         }
     }
 
