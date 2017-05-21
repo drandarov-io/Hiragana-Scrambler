@@ -4,26 +4,26 @@ A small Hiragana-Scrambler I wrote for practicing.
 
 Sample Output with Hiragana-Data:
 
-    ふぴ
-    ずぢぼどみ
-    ゆだぢ
-    ゆざ
-    ぴみんぼ
-    でれ
-    ぺぞを
-    こふ
-    ふて
-    んやあ
-    れむで
-    ずり
-    やゆはぶ
-    がんさ
-    だそえ
-    わあずみ
-    ふれあ
-    うんおなど
-    はんざさし
-    どよ
+    やれら
+    んぽぴょ
+    ひめにゅぎゅ
+    びょてちゅぜ
+    しゃぴゃじぇ
+    がそむす
+    びゅびょ
+    んほひゅえひ
+    につきゅ
+    やへりゃじゃ
+    わにゅわづきょ
+    れぎゅぎ
+    こひゅ
+    きゅんちゃみゃ
+    ぴゃいす
+    あみゃじゃ
+    をきうざ
+    わはんひ
+    よは
+    くぞくひゃ
 
 Sample Output with Romaji-Data:
 
